@@ -1,0 +1,27 @@
+[versions]
+compose-bom = "2022.10.00"
+gradleplugin = "8.0.2"
+kotlin = "1.7.20"
+
+[libraries]
+core-ktx = "androidx.core:core-ktx:1.8.0"
+lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+activity-compose = "androidx.activity:activity-compose:1.5.1"
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+test-junit = "junit:junit:4.13.2"
+android-test-junit = "androidx.test.ext:junit:1.1.5"
+android-test-espresso = "androidx.test.espresso:espresso-core:3.5.1"
+android-test-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom"}
+android-test-compose-ui = { module = "androidx.compose.ui:ui-test-junit4" }
+debug-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+debug-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleplugin" }
+android-library = { id = "com.android.library", version.ref = "gradleplugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
